@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bharat 100 Drone Services</title>
+    <title>HydroSight | Drone Hydrology App</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,270 +17,145 @@
       <header class="site-header">
         <div class="container nav-bar">
           <div class="logo">
-            <span class="logo-mark">B100</span>
+            <span class="logo-mark">HS</span>
             <div>
-              <p class="logo-title">Bharat 100</p>
-              <p class="logo-subtitle">Drone Services</p>
+              <p class="logo-title">HydroSight</p>
+              <p class="logo-subtitle">Drone Hydrology Platform</p>
             </div>
           </div>
-          <nav class="nav-links">
-            <a href="#solutions">Solutions</a>
-            <a href="#workflow">Workflow</a>
-            <a href="#impact">Impact</a>
-            <a href="#contact">Contact</a>
-          </nav>
-          <button class="ghost-button">Get proposal</button>
+          <a class="ghost-button" href="#workspace">Open workspace</a>
         </div>
       </header>
 
       <main>
         <section class="hero">
-          <div class="container hero-grid">
-            <div class="hero-copy">
-              <span class="pill">India-ready UAV operations</span>
-              <h1>
-                Precision drone services for resilient, data-driven infrastructure.
-              </h1>
-              <p>
-                Bharat 100 delivers rapid aerial intelligence for construction,
-                utilities, agriculture, and public safety teams. Capture, analyze,
-                and act within hours using secure flight operations and compliant
-                data handling.
-              </p>
-              <div class="hero-actions">
-                <button class="primary-button">Book a discovery call</button>
-                <button class="secondary-button">Download capabilities</button>
-              </div>
-              <div class="hero-trust">
-                <div>
-                  <h3>180+</h3>
-                  <p>Enterprise missions delivered</p>
-                </div>
-                <div>
-                  <h3>15 mins</h3>
-                  <p>Average response time</p>
-                </div>
-                <div>
-                  <h3>100%</h3>
-                  <p>DGCA compliant flight plans</p>
-                </div>
-              </div>
-            </div>
-            <div class="hero-panel">
-              <div class="hero-card">
-                <div class="hero-card-header">
-                  <div class="hero-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path
-                        d="M6 7h12l2 4h-3l-2-2H9l-2 2H4l2-4z"
-                        fill="currentColor"
-                      />
-                      <path
-                        d="M8 13h8v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-4z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="hero-card-title">Operations Command</p>
-                    <p class="hero-card-subtitle">Live mission telemetry</p>
-                  </div>
-                </div>
-                <div class="hero-card-body">
-                  <div class="metric">
-                    <p>Coverage</p>
-                    <h4>1,200 ha</h4>
-                  </div>
-                  <div class="metric">
-                    <p>Resolution</p>
-                    <h4>2.5 cm/px</h4>
-                  </div>
-                  <div class="metric">
-                    <p>Turnaround</p>
-                    <h4>4 hrs</h4>
-                  </div>
-                </div>
-                <div class="hero-card-footer">
-                  <span>AI-driven defect detection enabled</span>
-                  <button class="ghost-button small">View sample report</button>
-                </div>
-              </div>
-              <div class="hero-gradient"></div>
-            </div>
-          </div>
-        </section>
-
-        <section id="impact" class="stats">
-          <div class="container stats-grid">
-            <div>
-              <h2>Nationwide operations, localized precision.</h2>
-              <p>
-                From smart city construction to precision agriculture, our
-                pilots and analysts operate in every major region of India with
-                standardized mission playbooks.
-              </p>
-            </div>
-            <div class="stats-cards">
-              <article>
-                <h3>23</h3>
-                <p>States covered</p>
-              </article>
-              <article>
-                <h3>42k+</h3>
-                <p>Assets inspected</p>
-              </article>
-              <article>
-                <h3>18TB</h3>
-                <p>Secure data archived</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section id="solutions" class="solutions">
           <div class="container">
-            <div class="section-heading">
-              <span class="pill">Solutions</span>
-              <h2>Mission-ready services built for enterprise scale.</h2>
-            </div>
-            <div class="solution-grid">
-              <article>
-                <h3>Infrastructure inspections</h3>
-                <p>
-                  Automated tower, bridge, and rail inspections with thermal and
-                  LiDAR-ready payloads to spot microfractures early.
-                </p>
-              </article>
-              <article>
-                <h3>Construction progress tracking</h3>
-                <p>
-                  Weekly orthomosaics, BIM overlays, and stakeholder dashboards to
-                  prevent schedule drift.
-                </p>
-              </article>
-              <article>
-                <h3>Disaster response</h3>
-                <p>
-                  Rapid situational awareness with geofenced flight plans, safe
-                  landing zones, and compliance reporting.
-                </p>
-              </article>
-              <article>
-                <h3>Precision agriculture</h3>
-                <p>
-                  Multi-spectral crop health maps with irrigation recommendations
-                  tailored by agronomists.
-                </p>
-              </article>
-            </div>
+            <span class="pill">Prototype UI for watershed analytics</span>
+            <h1>
+              Upload drone and terrain inputs to generate watershed and flood outputs.
+            </h1>
+            <p>
+              This application scaffold accepts required hydrology input layers (DEM,
+              rainfall, LULC, and soil) and prepares output slots for watershed,
+              streams, longest stream path, and flood depth rasters by return period.
+            </p>
           </div>
         </section>
 
-        <section id="workflow" class="workflow">
-          <div class="container">
-            <div class="section-heading">
-              <span class="pill">Workflow</span>
-              <h2>From mission planning to action in five steps.</h2>
-            </div>
-            <div class="workflow-steps">
-              <div>
-                <h4>01. Requirement intake</h4>
-                <p>Define objectives, terrain constraints, and compliance needs.</p>
-              </div>
-              <div>
-                <h4>02. Flight operations</h4>
-                <p>DGCA-aligned pilots execute with safety-first protocols.</p>
-              </div>
-              <div>
-                <h4>03. Data processing</h4>
-                <p>AI-assisted stitching, annotation, and anomaly detection.</p>
-              </div>
-              <div>
-                <h4>04. Insights delivery</h4>
-                <p>Interactive dashboards, CAD overlays, and exportable files.</p>
-              </div>
-              <div>
-                <h4>05. Continuous improvement</h4>
-                <p>Ongoing recommendations and repeat mission scheduling.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="capabilities">
-          <div class="container capabilities-grid">
-            <div>
-              <h2>Capabilities your teams can deploy immediately.</h2>
-              <p>
-                Our fleet includes fixed-wing and multi-rotor drones paired with
-                AI analytics and secure cloud delivery so you can scale without
-                purchasing hardware.
+        <section id="workspace" class="workspace">
+          <div class="container workspace-grid">
+            <article class="panel">
+              <h2>Input data uploads</h2>
+              <p class="panel-intro">
+                Provide core layers for preprocessing. File validation and modeling hooks can be connected to your backend engine.
               </p>
-              <ul>
-                <li>Real-time streaming and secure data custody.</li>
-                <li>Multi-sensor payloads with thermal and LiDAR upgrades.</li>
-                <li>Custom SOPs aligned to your safety standards.</li>
-              </ul>
-              <button class="primary-button">Request a pilot project</button>
-            </div>
-            <div class="capability-cards">
-              <article>
-                <h3>24/7 command center</h3>
-                <p>Round-the-clock operations with redundant connectivity.</p>
-              </article>
-              <article>
-                <h3>AI analytics</h3>
-                <p>Detect defects, measure volumes, and forecast risks.</p>
-              </article>
-              <article>
-                <h3>Compliance toolkit</h3>
-                <p>Automated flight logs, audit trails, and permissions.</p>
-              </article>
-              <article>
-                <h3>Dedicated experts</h3>
-                <p>Certified pilots and analysts assigned to your account.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="cta" id="contact">
-          <div class="container cta-card">
-            <div>
-              <h2>Ready to modernize your aerial intelligence?</h2>
-              <p>
-                Share your objectives and we will craft a proposal with deployment
-                timelines, compliance plans, and sample dashboards.
+              <form id="hydrologyForm" class="upload-form">
+                <label>
+                  Drone DEM / DSM (GeoTIFF)
+                  <input type="file" name="dem" accept=".tif,.tiff" required />
+                </label>
+                <label>
+                  Rainfall data (CSV/NetCDF)
+                  <input type="file" name="rainfall" accept=".csv,.nc" required />
+                </label>
+                <label>
+                  LULC layer (GeoTIFF/Shapefile zip)
+                  <input type="file" name="lulc" accept=".tif,.tiff,.zip" required />
+                </label>
+                <label>
+                  Soil map (GeoTIFF/Shapefile zip)
+                  <input type="file" name="soil" accept=".tif,.tiff,.zip" required />
+                </label>
+                <label>
+                  Watershed outlet / AOI (GeoJSON/Shapefile zip)
+                  <input type="file" name="aoi" accept=".geojson,.json,.zip" required />
+                </label>
+                <label>
+                  Return periods for flood depth (years)
+                  <input
+                    type="text"
+                    name="returnPeriods"
+                    value="2, 5, 10, 25, 50, 100"
+                    placeholder="e.g. 2,5,10,25,50,100"
+                    required
+                  />
+                </label>
+                <button type="submit" class="primary-button">Run hydrology workflow</button>
+              </form>
+              <p id="status" class="status" aria-live="polite">
+                Waiting for inputs.
               </p>
-            </div>
-            <button class="secondary-button">Schedule a walkthrough</button>
+            </article>
+
+            <article class="panel">
+              <h2>Generated outputs</h2>
+              <p class="panel-intro">
+                Results appear after processing. These cards are wired for API integration.
+              </p>
+              <div id="outputs" class="output-grid">
+                <div class="output-card pending">
+                  <h3>Watershed boundary</h3>
+                  <p>Not generated yet</p>
+                </div>
+                <div class="output-card pending">
+                  <h3>Stream network</h3>
+                  <p>Not generated yet</p>
+                </div>
+                <div class="output-card pending">
+                  <h3>Longest stream</h3>
+                  <p>Not generated yet</p>
+                </div>
+                <div class="output-card pending">
+                  <h3>Flood depth rasters</h3>
+                  <p>Not generated yet</p>
+                </div>
+              </div>
+            </article>
           </div>
         </section>
       </main>
-
-      <footer class="site-footer">
-        <div class="container footer-grid">
-          <div>
-            <p class="logo-title">Bharat 100</p>
-            <p class="logo-subtitle">Drone Services</p>
-            <p class="footer-note">
-              Secure, compliant, and mission-ready aerial intelligence across India.
-            </p>
-          </div>
-          <div>
-            <h4>Company</h4>
-            <a href="#solutions">Solutions</a>
-            <a href="#workflow">Workflow</a>
-            <a href="#impact">Impact</a>
-          </div>
-          <div>
-            <h4>Contact</h4>
-            <a href="mailto:hello@bharat100.com">hello@bharat100.com</a>
-            <a href="tel:+919999999999">+91 99999 99999</a>
-            <span>New Delhi · Bengaluru · Mumbai</span>
-          </div>
-        </div>
-      </footer>
     </div>
+
+    <script>
+      const form = document.getElementById("hydrologyForm");
+      const statusEl = document.getElementById("status");
+      const outputs = document.getElementById("outputs");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const periods = String(formData.get("returnPeriods") || "")
+          .split(",")
+          .map((value) => value.trim())
+          .filter(Boolean);
+
+        statusEl.textContent = "Processing inputs... (prototype simulation)";
+
+        setTimeout(() => {
+          outputs.innerHTML = `
+            <div class="output-card complete">
+              <h3>Watershed boundary</h3>
+              <p>watershed_boundary.geojson</p>
+            </div>
+            <div class="output-card complete">
+              <h3>Stream network</h3>
+              <p>stream_network.geojson</p>
+            </div>
+            <div class="output-card complete">
+              <h3>Longest stream</h3>
+              <p>longest_stream.geojson</p>
+            </div>
+            <div class="output-card complete">
+              <h3>Flood depth rasters</h3>
+              <p>${periods.map((p) => `RP-${p}yr.tif`).join(", ") || "No return periods provided"}</p>
+            </div>
+          `;
+
+          statusEl.textContent =
+            "Hydrology workflow finished. Connect this UI to your processing backend (e.g., TauDEM/HEC-HMS/HEC-RAS/GDAL pipeline) for real outputs.";
+        }, 1000);
+      });
+    </script>
   </body>
 </html>
